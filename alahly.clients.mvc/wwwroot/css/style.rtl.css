@@ -1,0 +1,111 @@
+/**/
+/* --------------- Reusable CSS Code --------------- */
+/* Tajawal,Alexandria,El Messiri,Roboto */
+
+/*#region*/
+  body[dir="rtl"]{
+    font-family: Alexandria,"El Messiri",Roboto;
+  }
+
+  body[dir="rtl"] .logo{
+    font-family:  "El Messiri", Tajawal, Alexandria, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  body[dir="rtl"] .alahly-logo * {
+    left: -50%;
+  }
+/*#endregion*/
+/* --------------- Showcase Area Styling --------------- */
+/*#region*/
+  body[dir="rtl"]  .showcase-area .circle {
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  body[dir="rtl"] .section-background .person{
+    right:unset;
+    left: 0;
+    transform: scaleX(-1);
+    color: hsl(352, 100%, 60%)
+  }
+  body[dir="rtl"] .section-background{
+    transform: translateX(calc(-50% - 120px));
+    background-image: linear-gradient(
+      -55deg,
+      var(--main-color-2) 20%,
+      var(--main-color-1) 20%
+    );
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 0;
+  }
+  body[dir="rtl"] .svg.svg-logo{
+    right:0;
+    transform: translateX(50%);
+  }
+  
+  /*#endregion*/
+
+/* --------------- Testimonials Section Styling --------------- */
+  /*#region*/
+  /*#endregion*/
+
+  /* --------------- Video Player ---------------- */
+  /*#region*/
+    body[dir="rtl"] .vid-container iframe{  
+      border-radius: 10px 0 0 10px;
+    }
+  
+    body[dir="rtl"] .vid-list-container ol#vid-list{
+      border-radius: 0 10px 10px 0;
+    }
+  /*#endregion*/
+
+  /* --------------- News Swipe Slider Section---------------- */
+/*#region*/
+body[dir="rtl"] .section.news-swipe-slider{
+  padding: 0;
+}
+.news-slider-box{
+  width:100%;
+  height: 450px;
+  /* background-color: var(--main-color-1); */
+  /* box-shadow: 2px 2px rgba(0, 0, 0, 0.7) ; */
+}
+
+body[dir="rtl"] .news-slider-info{
+
+}
+
+body[dir="rtl"] .news-swipe-slider-grid{
+}
+body[dir="rtl"] .swiper.newsSwiper {
+}
+
+
+
+body[dir="rtl"] .newsSwiper .swiper-slide {
+}
+
+body[dir="rtl"] .newsSwiper .swiper-slide img {
+}
+body[dir="rtl"] .newsSwiper .swiper-slide .news-card{
+  border-right: 0.3rem solid var(--main-color-1);
+  border-left: 0;
+  margin-left: auto; /*align right and left */
+  margin-right: 0; /* align right and left*/
+}
+body[dir="rtl"] .newsSwiper  .sub-heading{
+}
+body[dir="rtl"] .newsSwiper .swiper-slide .news-card .heading{
+}
+body[dir="rtl"] .newsSwiper .swiper-slide .news-card p.text{
+}
+body[dir="rtl"] .newsSwiper .swiper-slide .news-card .news-card-footer .btn{
+  margin-left: auto;
+}
+/*#endregion*/
+
+
+

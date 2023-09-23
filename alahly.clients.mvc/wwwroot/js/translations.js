@@ -1,0 +1,38 @@
+const translations = {
+    en: {
+      "//Menu_Section":"-------- This section for Menu Items Translations ------",
+      logo: "AlAhly",
+      home: "Home",
+      about: "About Us",
+      about_sub_heading: "Trophy",
+      about_heading: "Al Ahly Club Victories",
+      contact: "Contact us",
+      services:"Other Activities",
+      portfolio:"Academy",
+      news:"News",
+      "al_ahly_club":"Al-Ahly Club",
+      selectLanguage: "Select a language",
+      english: "English",
+      arabic: "Arabic",
+      frensh:"Frensh",
+    },
+    ar: {
+      "//Menu_Section":"-------- This section for Menu Items Translations ------",
+      logo: "الأهلى",
+      home: "الرئيسية",
+      about: "من نحن",
+      about_sub_heading: "بطولات",
+      about_heading: "إنجازات النادى الأهلى",
+      contact: "تواصل معنا",
+      services:"آنشطة أخري",
+      portfolio:"الأكاديمية",
+      news:"الآخبار",
+      "al_ahly_club":"النادي الأهلي",
+      selectLanguage: "إختر لغة",
+      english: "الانجليزية",
+      arabic: "العربية",
+      frensh:"الفرنسية",
+    },
+  };
+  
+ // export default translations;
