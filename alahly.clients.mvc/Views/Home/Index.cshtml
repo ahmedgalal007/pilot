@@ -1,9 +1,21 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
+@{
+  ViewData["Title"] = "AL-Ahly Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@await Component.InvokeAsync("SectionEventBanner")
+@* @await Component.InvokeAsync("SectionShowCaseArea") *@
+@await Component.InvokeAsync("SectionNewsSwipeSlider")
 
+@await Component.InvokeAsync("SectionAbout")
+@await Component.InvokeAsync("SectionNewsGrid")
+@await Component.InvokeAsync("SectionSkills")
+@await Component.InvokeAsync("SectionTrophy")
+@await Component.InvokeAsync("SectionOtherActivities")
+@await Component.InvokeAsync("SectionAcademy")
+@await Component.InvokeAsync("SectionVideoPlayList")
+@await Component.InvokeAsync("SectionTeamPlayers")
+@* @await Component.InvokeAsync("SectionBoardMembers") *@
+@await Component.InvokeAsync("SectionContact")
+@await Component.InvokeAsync("SectionSubscription")
+@await Component.InvokeAsync("SectionSponsors")

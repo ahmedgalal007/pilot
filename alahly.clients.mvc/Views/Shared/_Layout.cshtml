@@ -2,52 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - alahly.clients.mvc</title>
-    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/style.rtl.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/alahly.clients.mvc.styles.css" asp-append-version="true" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@ViewData["Title"] - Al-Ahly Club</title>
+  <!-- --------- Scroll Reveal Library --------- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- --------- Swiper Library --------- -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- --------- Unicons Icons --------- -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- --------- CSS Files --------- -->
+  <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/style.rtl.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/alahly.clients.mvc.styles.css" asp-append-version="true" />
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">alahly.clients.mvc</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
-                                asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+  <div class="overlay"></div>
+  <header>
+    <!-- --------- Navbar --------- -->
+    <nav class="container">
+      <!-- <a href="#" class="logo" data-i18n="logo">Al - <span>Ahly</span></a> -->
+      <a href="#" class="logo">
+        <div class="svg svg-logo">
+          <div class="alahly-logo">
+            <svg class="alahly-logo-background">
+              <use href="assets/svg/index.svg#alahly-logo-background"></use>
+            </svg>
+            <svg class="alahly-logo-black">
+              <use href="assets/svg/index.svg#alahly-logo-black"></use>
+            </svg>
+            <svg class="alahly-logo-brown">
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - alahly.clients.mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+              <linearGradient id="gradient-2step-gold" x2="-.3" y2=".5">
+                <stop offset="0" stop-color="#d98f13"></stop>
+                <stop offset=".13" stop-color="#6a4405"></stop>
+                <stop offset=".19" stop-color="#583a05"></stop>
+                <stop offset=".27" stop-color="#b08030"></stop>
+                <stop offset=".44" stop-color="#ffeada"></stop>
+                <stop offset=".48" stop-color="#fad5db"></stop>
+                <stop offset=".65" stop-color="#dfbc4a"></stop>
+                <stop offset="1" stop-color="#311703"></stop>
+              </linearGradient>
+              <use href="assets/svg/index.svg#alahly-logo-brown"></use>
+            </svg>
+
+            <svg class="alahly-logo-shield">
+              <use href="assets/svg/index.svg#alahly-logo-shield"></use>
+            </svg>
+
+            <svg class="alahly-logo-word-ar">
+              <use href="assets/svg/index.svg#alahly-logo-word-ar"></use>
+            </svg>
+
+            <svg class="alahly-logo-eagle-shadow">
+              <use href="assets/svg/index.svg#alahly-logo-eagle-shadow"></use>
+            </svg>
+
+            <svg class="alahly-logo-eagle-body">
+              <use href="assets/svg/index.svg#alahly-logo-eagle-body"></use>
+            </svg>
+
+            <svg class="alahly-logo-eagle-body-tail">
+              <use href="assets/svg/index.svg#alahly-logo-eagle-body-tail"></use>
+            </svg>
+
+            <svg class="alahly-logo-word-en-alahly">
+              <use href="assets/svg/index.svg#alahly-logo-word-en-alahly"></use>
+            </svg>
+            <svg class="alahly-logo-word-en-1907">
+              <use href="assets/svg/index.svg#alahly-logo-word-en-1907"></use>
+            </svg>
+
+            <!-- <svg class="alahly-logo-word-ar" width="315px" height="400px">
+                <use href="assets/svg/index.svg#alahly-logo-word-ar"></use>
+            </svg> -->
+
+            <svg class="gradient-gold-symbol">
+              <use href="assets/svg/index.svg#gradient-gold"></use>
+            </svg>
+          </div>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+      </a>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="#home" class="nav-link" data-i18n="home">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link" data-i18n="about">About</a>
+          </li>
+          <li>
+            <a href="#news-slider" class="nav-link" data-i18n="news">News</a>
+          </li>
+          <li>
+            <a href="#services" class="nav-link" data-i18n="services">Other Activities</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="nav-link" data-i18n="portfolio">Academy</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-i18n="contact">Contact</a>
+          </li>
+        </ul>
+        <i class="uil uil-moon toggle-btn"></i>
+        <div class="lang-icons-container">
+          <div class="txt-btn lang-icon lang-btn">EN</div>
+          <div class="lang-icons">
+            <button class="txt-btn lang-icon">AR</button>
+            <button class="txt-btn lang-icon active">EN</button>
+            <button class="txt-btn lang-icon">FR</button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <main role="main" class="pb-3">
+    @RenderBody()
+  </main>
+  <footer class="border-top footer text-muted">
+    <!-- --------- Footer --------- -->
+    <div class="container">
+      <a href="#" class="logo"><span data-i18n="al_ahly_club">Al Ahly Club</span></a>
+      <p class="text">&copy; Copyright 2023. All rights reserved</p>
+      <ul class="social-media">
+        <li>
+          <a href="" class="social-link">
+            <i class="uil uil-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="social-link">
+            <i class="uil uil-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="social-link">
+            <i class="uil uil-dribbble"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- JavaScript Files -->
+  <script src="./js/translations.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./lib/mixitup.min.js"></script>
+  @* <script src="~/js/app.js" asp-append-version="true"></script> *@
+  <script src="~/js/app.js" asp-append-version="true"></script>
+  @await RenderSectionAsync("Scripts", required: false)
 </body>
 
 </html>
